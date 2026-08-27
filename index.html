@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TrailLog Privacy Policy</title>
+<style>
+  :root {
+    --text: #1c1c1e;
+    --muted: #6e6e73;
+    --accent: #0a7d3a;
+    --border: #e5e5e7;
+    --bg: #ffffff;
+  }
+  body {
+    margin: 0;
+    padding: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+  }
+  .wrap {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 48px 24px 96px;
+  }
+  h1 {
+    font-size: 1.9rem;
+    margin-bottom: 0.2em;
+  }
+  .updated {
+    color: var(--muted);
+    font-size: 0.95rem;
+    margin-bottom: 2.5em;
+  }
+  h2 {
+    font-size: 1.25rem;
+    margin-top: 2.4em;
+    padding-top: 0.6em;
+    border-top: 1px solid var(--border);
+  }
+  h3 {
+    font-size: 1.05rem;
+    margin-top: 1.6em;
+  }
+  p, li {
+    font-size: 1rem;
+  }
+  ul {
+    padding-left: 1.3em;
+  }
+  li {
+    margin-bottom: 0.5em;
+  }
+  a {
+    color: var(--accent);
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1em 0 1.5em;
+    font-size: 0.95rem;
+  }
+  th, td {
+    text-align: left;
+    padding: 8px 10px;
+    border-bottom: 1px solid var(--border);
+    vertical-align: top;
+  }
+  th {
+    color: var(--muted);
+    font-weight: 600;
+  }
+  .note {
+    background: #f5f5f7;
+    border-radius: 10px;
+    padding: 14px 18px;
+    font-size: 0.92rem;
+    color: var(--muted);
+    margin: 1.5em 0;
+  }
+  footer {
+    margin-top: 4em;
+    padding-top: 1.5em;
+    border-top: 1px solid var(--border);
+    color: var(--muted);
+    font-size: 0.9rem;
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <h1>TrailLog Privacy Policy</h1>
+  <p class="updated">Last updated: 27 August 2026</p>
+
+  <p>TrailLog ("the App", "we", "us") is a logging and reference app for amateur
+  ("ham") radio operators, built by an independent developer. This policy explains
+  what data the App handles, where it's stored, and what (if anything) leaves
+  your device.</p>
+
+  <p><strong>TrailLog does not operate its own servers or accounts. There is no
+  TrailLog backend collecting your data. Your log, contacts, and notes are
+  stored on your device, with optional backup to your own iCloud account. The
+  App does contact a number of third-party amateur radio and space-weather data
+  services on your behalf, listed below.</strong></p>
+
+  <h2>1. Information you provide</h2>
+  <p>You may enter the following information directly into the App. It is
+  stored locally on your device:</p>
+  <ul>
+    <li>Your callsign and station details (Preferences)</li>
+    <li>QSO (contact) logs: callsigns, names, locations, signal reports, notes, timestamps, and activation references (SOTA/POTA/WWFF etc.)</li>
+    <li>Your Contacts list, additional callsigns, and remarks</li>
+    <li>Custom map boundaries, imported GPX tracks, and watch-list entries</li>
+    <li>Optional third-party account credentials or API keys you choose to enter (see Section 3)</li>
+  </ul>
+  <p>None of this is transmitted to us. We do not have a server, and we cannot
+  see or access your log, contacts, or notes.</p>
+
+  <h2>2. Location data</h2>
+  <p>If you grant permission, the App uses your device's location (via Apple's
+  Core Location, "When In Use" only) to:</p>
+  <ul>
+    <li>Centre the map on your position and calculate distances to references, spots, and contacts</li>
+    <li>Populate propagation calculations with your current location as a starting point</li>
+  </ul>
+  <p>Location is requested on demand (e.g. when you tap Refresh), not tracked
+  continuously or in the background. Your location is not stored by us or sent
+  to any analytics service. It may be sent to certain third-party services listed
+  in Section 3 (e.g. propagation or nearby-activation lookups) as part of the
+  request those features make on your behalf.</p>
+
+  <h2>3. Third-party services the App connects to</h2>
+  <p>Several features work by querying public amateur radio and space-weather
+  data services directly from your device. When you use these features, your
+  device communicates directly with the relevant third party, and that
+  organisation's own privacy policy governs how they handle the request
+  (typically your callsign, an API key or login you've provided, and/or your
+  approximate location).</p>
+  <table>
+    <tr><th>Feature</th><th>Third-party service(s)</th></tr>
+    <tr><td>Spots &amp; Alerts</td><td>SOTA (sotawatch.sota.org.uk, sota.org.uk), POTA (pota.app), WWFF (wwff.co), Spothole, Parks n Peaks, RBN Hole</td></tr>
+    <tr><td>SOTA sign-in</td><td>SOTA.org.uk account login (OAuth), used for self-spotting/alerts under your own SOTA account</td></tr>
+    <tr><td>Callsign lookup</td><td>HamQTH (hamqth.com), only if you enter your own HamQTH username/password in Preferences</td></tr>
+    <tr><td>Propagation &amp; WSPR</td><td>WSPRnet / wspr.live</td></tr>
+    <tr><td>Space weather</td><td>NOAA Space Weather Prediction Center, hamqsl.com, GFZ Potsdam (Kp index), Australian Bureau of Meteorology Space Weather Services (the latter only if you supply your own free BoM API key)</td></tr>
+    <tr><td>Maps</td><td>Apple Maps / MapKit, and (optionally) Geoscience Australia map tiles</td></tr>
+  </table>
+  <p>Any username, password, or API key you enter for these services is stored
+  only in your device's Keychain (encrypted, device-only) and is sent directly
+  to that service, never to us.</p>
+
+  <h2>4. iCloud backup</h2>
+  <p>If enabled in Preferences, the App periodically saves a backup of your log,
+  archive, and contacts to <strong>your own</strong> iCloud Drive (under
+  Files → TrailLog → Backups). This is Apple's iCloud service, governed by
+  Apple's privacy policy. We have no access to it. You can disable this at any
+  time in Preferences.</p>
+
+  <h2>5. Crash reports</h2>
+  <p>If the App crashes, a diagnostic report is generated and stored locally on
+  your device only. Nothing is sent automatically. You can review the report and
+  choose to email it to the developer yourself via the Mail app. This is
+  entirely optional and requires you to tap Send.</p>
+
+  <h2>6. Analytics, advertising, and tracking</h2>
+  <p>TrailLog does not use analytics SDKs, advertising networks, or any form of
+  cross-app tracking. We do not sell or share your data with advertisers, and
+  we have no mechanism to do so even if we wanted to, since we don't collect it
+  in the first place.</p>
+
+  <h2>7. Data deletion</h2>
+  <p>Since your data lives on your device, you're in full control:</p>
+  <ul>
+    <li>Delete individual QSOs, contacts, or backups from within the App</li>
+    <li>Clear any saved credentials or API keys in Preferences</li>
+    <li>Deleting the App from your device removes all locally stored data</li>
+    <li>Deleting your iCloud backup files removes those independently, via the Files app</li>
+  </ul>
+
+  <h2>8. Children's privacy</h2>
+  <p>TrailLog is not directed at children and is not intended for use by anyone
+  under 13. We do not knowingly collect information from children, and since the
+  App has no server-side data collection, no personal information is retained
+  by us regardless of age.</p>
+
+  <h2>9. Changes to this policy</h2>
+  <p>We may update this policy from time to time, for example if a new feature
+  changes how data is handled. The "Last updated" date above will reflect any
+  changes. Continued use of the App after an update constitutes acceptance of
+  the revised policy.</p>
+
+  <h2>10. Contact</h2>
+  <p>Questions about this policy or how TrailLog handles data can be sent to:
+  <a href="mailto:traillog@outlook.com">traillog@outlook.com</a></p>
+
+  <footer>
+    <p>This policy describes TrailLog's data practices as of the date above.</p>
+  </footer>
+
+</div>
+</body>
+</html>
