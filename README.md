@@ -1,2 +1,2 @@
-# traillog-privacy
-TrailLog privacy policy
+# traillog
+TrailLog privacy policy and support
