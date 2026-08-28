@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TrailLog Support</title>
+<style>
+  :root {
+    --text: #1c1c1e;
+    --muted: #6e6e73;
+    --accent: #0a7d3a;
+    --border: #e5e5e7;
+    --bg: #ffffff;
+  }
+  body {
+    margin: 0;
+    padding: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+  }
+  .wrap {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 48px 24px 96px;
+  }
+  h1 {
+    font-size: 1.9rem;
+    margin-bottom: 0.3em;
+  }
+  .intro {
+    color: var(--muted);
+    font-size: 1.05rem;
+    margin-bottom: 2em;
+  }
+  .contact-box {
+    background: #f5f5f7;
+    border-radius: 10px;
+    padding: 20px 22px;
+    margin: 1.5em 0 2.5em;
+  }
+  .contact-box p {
+    margin: 0.3em 0;
+  }
+  .contact-box a {
+    font-size: 1.1rem;
+    font-weight: 600;
+  }
+  h2 {
+    font-size: 1.2rem;
+    margin-top: 2em;
+    padding-top: 0.6em;
+    border-top: 1px solid var(--border);
+  }
+  h3 {
+    font-size: 1rem;
+    margin-top: 1.4em;
+    margin-bottom: 0.3em;
+  }
+  p, li {
+    font-size: 1rem;
+  }
+  ul {
+    padding-left: 1.3em;
+  }
+  li {
+    margin-bottom: 0.5em;
+  }
+  a {
+    color: var(--accent);
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+  footer {
+    margin-top: 4em;
+    padding-top: 1.5em;
+    border-top: 1px solid var(--border);
+    color: var(--muted);
+    font-size: 0.9rem;
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <h1>TrailLog Support</h1>
+  <p class="intro">I'm the sole developer behind TrailLog, so if something's not working right or you've got a question, email me directly and I'll get back to you.</p>
+
+  <div class="contact-box">
+    <p>Email</p>
+    <p><a href="mailto:traillog@outlook.com">traillog@outlook.com</a></p>
+  </div>
+
+  <h2>Common questions</h2>
+
+  <h3>Callsign lookups aren't filling in name or grid square</h3>
+  <p>This feature uses your HamQTH account, so it needs your own HamQTH username and password entered under Preferences. If you've entered them and it's still not working, double check the password hasn't expired on HamQTH's end. TrailLog just passes your credentials through.</p>
+
+  <h3>Space weather data says "unavailable"</h3>
+  <p>The Bureau of Meteorology space weather figures need a free API key from BoM, entered in Preferences. Without a key, that section won't populate. NOAA and Kp index data don't need a key and should load regardless.</p>
+
+  <h3>iCloud backup isn't showing up</h3>
+  <p>Check that backups are switched on in Preferences first. Backups are saved to your own iCloud Drive, under Files → TrailLog → Backups, not somewhere inside the app itself, so look there rather than in TrailLog.</p>
+
+  <h3>SOTA sign-in keeps failing</h3>
+  <p>This goes through SOTA.org.uk's own login page, so if it's rejecting your credentials, try signing in on their website directly first to rule out an account issue on their end. If that works fine but TrailLog still won't authenticate, email me.</p>
+
+  <h3>The app crashed</h3>
+  <p>Nothing gets sent automatically. If you want to help me fix it, open TrailLog again, find the crash report (Preferences → Diagnostics), and email it to me. Or just describe what you were doing when it happened.</p>
+
+  <h3>Something else</h3>
+  <p>Just email me. Screenshots help a lot if it's a display issue.</p>
+
+  <footer>
+    <p>TrailLog · <a href="mailto:traillog@outlook.com">traillog@outlook.com</a></p>
+  </footer>
+
+</div>
+</body>
+</html>
